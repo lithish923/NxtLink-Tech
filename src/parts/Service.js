@@ -26,9 +26,9 @@ export default function Service({ data }) {
               // eslint-disable-next-line react/no-array-index-key
               <Fade direction={item.animation} delay={500 * index} key={index} triggerOnce>
                 <div>
-                  <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
+                  <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-grey transform transition duration-500 hover:scale-105 flex flex-col items-center">
                     <img src={item.imageUrl} alt="Service" className="w-full rounded-t-2xl" />
-                    <h2 className="text-theme-blue text-center text-xl py-7 rounded-b-2xl">{item.title}</h2>
+                    <h2 className="text-theme-blue text-center text-xl py-7">{item.title}</h2>
                   </div>
                 </div>
               </Fade>

@@ -16,7 +16,7 @@ export default function HeroPortfolio() {
           <h1 className="text-6xl text-theme-blue font-bold leading-tight mb-5">Portfolio</h1>
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
-          <p className="font-light text-xl text-gray-400 leading-relaxed">
+          <p className="font-light text-xl text-theme-blue leading-relaxed">
           As a software development company specializing in website design, mobile app development, and UI/UX design, we have earned the trust of clients globally.          </p>
         </Fade>
       </div>

@@ -18,11 +18,11 @@ export default function Advantage({ data }) {
           </p>
         </Fade>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-[70px]">
           {data.flat().map((item, index) => (
             <Fade bottom triggerOnce delay={500 * index} key={index}>
-              <div className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-lg border border-light-theme-purple transform transition duration-500 hover:scale-105">
-                <img src={item.imageUrl} alt={item.title} className="w-[75px] h-[75px] mb-3" />
+              <div className="flex flex-col items-center justify-center text-center bg-white p-4 rounded-xl shadow-lg border-none border-light-theme-purple transform transition duration-500 hover:scale-105 w-[256px] h-[150px]">
+                <img src={item.imageUrl} alt={item.title} className={item.style} />
                 <h2 className="text-theme-blue text-lg mb-2">{item.title}</h2>
               </div>
             </Fade>

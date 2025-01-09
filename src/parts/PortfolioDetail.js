@@ -68,8 +68,7 @@ export default function PortfolioDetail({ data }) {
                   Project Detail
                 </h1>
 
-                <p className="font-light text-lg text-gray-400 text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p className="font-light text-lg text-gray-400 text-justify">{item.Description}
                 </p>
               </div>
 
@@ -81,7 +80,7 @@ export default function PortfolioDetail({ data }) {
                 <div className="flex flex-row ml-1">
                   {
                     item.responsibility.map((responsibility) => (
-                      <div className="mr-4 px-6 py-3 text-theme-purple border border-theme-purple rounded-full shadow-lg">
+                      <div className="mr-4 px-6 py-3 text-[#FF0000] border border-[#FF0000] rounded-full shadow-lg">
                         {responsibility}
                       </div>
                     ))
@@ -89,13 +88,12 @@ export default function PortfolioDetail({ data }) {
                 </div>
               </div>
 
-              <p className="font-light italic text-gray-400 mt-16 mx-8 sm:mx-16 xl:mx-28">
-                * This project is just example.
+              <p className="font-light italic text-black mt-16 mx-8 sm:mx-16 xl:mx-28">
                 {' '}
                 <br />
                 Original project :
                 {' '}
-                <Button type="link" href={item.credit} target="_blank" className="text-theme-purple" isExternal>{item.credit}</Button>
+                <Button type="link" href={item.credit} target="_blank" className="text-[#FF0000]" isExternal>{item.credit}</Button>
               </p>
             </Fade>
           </div>
